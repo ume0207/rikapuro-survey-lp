@@ -52,11 +52,11 @@ a{color:inherit;}
 .brand{display:inline-block;font-family:var(--f-serif);font-size:clamp(28px,8.5vw,38px);font-weight:600;letter-spacing:.08em;line-height:1.35;margin-top:12px;color:#A98A4F;border:2px solid var(--orange);padding:2px 26px;white-space:nowrap;}
 
 /* stage */
-.stage{position:relative;background:url('https://rikapuro-lp.pages.dev/product-turf.png') center 35%/cover no-repeat;padding:24px 34px 30px;flex:1;}
+.stage{position:relative;background:url('https://rikapuro-lp.pages.dev/product-turf.png') center 35%/cover no-repeat;padding:24px clamp(14px,4.5vw,34px) 30px;flex:1;}
 .stage::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(245,242,233,.30),rgba(60,40,10,.18) 55%,rgba(60,40,10,.34));}
 .stage>*{position:relative;}
-.stage-title{text-align:center;color:#fff;font-size:17px;font-weight:600;letter-spacing:.2em;text-shadow:0 1px 10px rgba(50,30,5,.65);display:flex;align-items:center;gap:14px;justify-content:center;}
-.stage-title::before,.stage-title::after{content:"";flex:0 0 44px;height:1px;background:rgba(255,255,255,.85);}
+.stage-title{text-align:center;color:#fff;font-size:clamp(13.5px,4vw,17px);font-weight:600;letter-spacing:.14em;white-space:nowrap;text-shadow:0 1px 10px rgba(50,30,5,.65);display:flex;align-items:center;gap:10px;justify-content:center;}
+.stage-title::before,.stage-title::after{content:"";flex:0 1 44px;min-width:14px;height:1px;background:rgba(255,255,255,.85);}
 
 /* teaser card */
 .teaser{background:linear-gradient(180deg,#FBF7EA,#F3EAD2);border:1px solid #D9C388;box-shadow:0 8px 22px rgba(50,30,5,.30);margin:16px auto 0;padding:15px 12px 13px;text-align:center;}
@@ -65,13 +65,13 @@ a{color:inherit;}
 .teaser .name .x{color:var(--orange);font-size:12px;padding:0 2px;}
 .teaser .item{font-size:19px;font-weight:800;letter-spacing:.05em;}
 .teaser .item small{font-size:12px;font-weight:600;color:var(--ink-soft);}
-.price-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:4px;}
-.was{font-size:12px;color:#8E8065;line-height:1.5;}
+.price-row{display:flex;align-items:center;justify-content:center;gap:clamp(6px,2.2vw,12px);margin-top:4px;}
+.was{font-size:12px;color:#8E8065;line-height:1.5;white-space:nowrap;}
 .was s{font-size:15px;}
-.now{font-size:44px;font-weight:800;color:var(--red);line-height:1;letter-spacing:.02em;}
+.now{font-size:clamp(31px,10.5vw,44px);font-weight:800;color:var(--red);line-height:1;letter-spacing:.02em;white-space:nowrap;}
 .now .en{font-size:20px;}
 .now .tax{font-size:12px;color:#8E8065;font-family:var(--f-body);font-weight:500;letter-spacing:0;}
-.off{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#FBEBC4,#E9CE8C 58%,#CDA84E);color:#6E5316;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:18px;line-height:1.05;box-shadow:0 3px 8px rgba(50,30,5,.28);border:2px solid #fff;}
+.off{width:clamp(46px,14vw,58px);height:clamp(46px,14vw,58px);flex:0 0 auto;border-radius:50%;background:radial-gradient(circle at 32% 28%,#FBEBC4,#E9CE8C 58%,#CDA84E);color:#6E5316;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:clamp(14px,4.4vw,18px);line-height:1.05;box-shadow:0 3px 8px rgba(50,30,5,.28);border:2px solid #fff;}
 .off small{font-size:9.5px;letter-spacing:.04em;}
 .sub-teki{margin-top:7px;font-size:11.5px;font-family:var(--f-body);color:#6E5316;}
 .sub-teki b{color:var(--orange-deep);}
@@ -105,8 +105,8 @@ a{color:inherit;}
 /* done view */
 #doneView{display:none;animation:qin .5s ease;}
 #doneView.on{display:block;}
-.thanks{ text-align:center;color:#fff;font-size:19px;font-weight:700;letter-spacing:.12em;line-height:2;text-shadow:0 1px 10px rgba(50,30,5,.7);}
-.thanks .l1{display:flex;align-items:center;gap:14px;justify-content:center;}
+.thanks{ text-align:center;color:#fff;font-size:clamp(16px,4.6vw,19px);font-weight:700;letter-spacing:.12em;line-height:2;text-shadow:0 1px 10px rgba(50,30,5,.7);}
+.thanks .l1{display:flex;align-items:center;gap:14px;justify-content:center;white-space:nowrap;}
 .thanks .l1::before,.thanks .l1::after{content:"";flex:0 0 34px;height:1px;background:rgba(255,255,255,.85);}
 
 .reasons-bar{background:linear-gradient(180deg,#FBF7EA,#F1ECDB);border:1px solid #D9C388;box-shadow:0 6px 16px rgba(50,30,5,.25);margin:16px auto 0;padding:9px 10px;text-align:center;font-size:16px;font-weight:700;letter-spacing:.06em;color:#7A5C22;}
